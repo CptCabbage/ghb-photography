@@ -4,16 +4,19 @@ import utilStyles from '../styles/utils.module.css'
 import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
-export default App;
 import React from 'react';
 import ReactDOM from 'react-dom';
 var listOfImages =[];
+import background from "./public/images/Lightning.jpg";
 
 export default function Home({ allPostsData }) {
   return (
     importAll(r) {
         return r.keys().map(r);
     }
+        <div style={{ backgroundImage: `url(${background})` }}>
+
+    
     componentWillMount() {
         listOfImages = this.importAll(require.context('./images/', false, /\.(png|jpe?g|svg)$/));
     }
@@ -65,6 +68,7 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
     </Layout>
+    </div>
   )
 }
 
