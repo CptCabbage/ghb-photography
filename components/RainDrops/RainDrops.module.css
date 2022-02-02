@@ -12,7 +12,6 @@
 
 .path {
   background-color: #a1c6cc;
-  background-image: url("public/images/Lightning.jpg");
   opacity: var(--o);
   transform: scaleY(calc(var(--s) * 1.5));
 }
