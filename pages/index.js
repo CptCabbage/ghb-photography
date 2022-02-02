@@ -7,45 +7,44 @@ import Date from '../components/date'
 import React from 'react';
 import ReactDOM from 'react-dom';
 var listOfImages =[];
-import background from "./public/images/Lightning.jpg";
+import background from "/images/Lightning.jpg";
 
 export default function Home({ allPostsData }) {
   return (
-    importAll(r) {
-        return r.keys().map(r);
-    }
-        <div style={{ backgroundImage: `url(${background})` }}>
+    //importAll(r) {
+    //    return r.keys().map(r);
+    //}
+        <div style={{ backgroundImage: `url(${background})` }}></div>
 
     
-    componentWillMount() {
-        listOfImages = this.importAll(require.context('./images/', false, /\.(png|jpe?g|svg)$/));
-    }
-    render(){
-        return(
-          <div>
-              {
-                    listOfImages.map(
-                      (image, index) =>    <img key={index} src={image} alt="info"></img>
-                    )
-              }
-          </div>
-        )
-    }
-    <Layout home>
+    //componentWillMount() {
+    //    listOfImages = this.importAll(require.context('/images/', false, /\.(png|jpe?g|svg)$/));
+    //}
+    //render(){
+    //    return(
+    //      <div>
+    //          {
+    //                listOfImages.map(
+    //                  (image, index) =>    <img key={index} src={image} alt="info"></img>
+    //                )
+    //          }
+    //      </div>
+    //    )
+    //}
+    <Layout>
       <Head>
         <title>{siteTitle}</title>
       </Head>
       <section className={utilStyles.headingMd}>
         <p>
-          'Very capable, friendly individual. Have been off work due to illness
-          and have recently got back into the workforce and am now looking for
+          'Very capable, friendly individual. Have been off work due to illness and have recently got back into the workforce and am now looking for
           something more challenging which would enable me to support a family.
           I have great skills and knowledge in the hospitality sector and am
           also very technologically minded. I have experience with HTML, CSS,
           JAVA, & other languages. I feel capable of learning any programming
           language. I would like the opportunity to develop my skills and a
           career in the technology sector.'
-        </p>
+          </p>
         <p>
           (This is a sample website - you’ll be building a site like this in{' '}
           <a href="https://nextjs.org/learn">our Next.js tutorial</a>.)
@@ -68,7 +67,7 @@ export default function Home({ allPostsData }) {
         </ul>
       </section>
     </Layout>
-    </div>
+
   )
 }
 
