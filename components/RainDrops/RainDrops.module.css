@@ -1,0 +1,29 @@
+.raindrop {
+  animation-delay: calc(var(--d) * 1s);
+  animation-duration: calc(var(--a) * 1s);
+  animation-iteration-count: infinite;
+  animation-name: drop;
+  animation-timing-function: linear;
+  height: 30px;
+  left: calc(var(--x) * 1%);
+  position: absolute;
+  top: calc((var(--y) + 50) * -1px);
+}
+
+.path {
+  background-color: #a1c6cc;
+  background-image: url("public/images/Lightning.jpg");
+  opacity: var(--o);
+  transform: scaleY(calc(var(--s) * 1.5));
+}
+
+@keyframes drop {
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100vh);
+  }
+}
