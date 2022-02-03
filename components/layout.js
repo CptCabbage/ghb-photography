@@ -6,7 +6,7 @@ import Link from 'next/link'
 import RainDrops from './RainDrops'
 
 const name = 'George Batty'
-export const siteTitle = 'Next.js Sample Website'
+export const siteTitle = 'GHB Photography'
 
 export default function Layout({ children, home }) {
   return (
@@ -35,11 +35,6 @@ export default function Layout({ children, home }) {
                 />
               </a>
             </Link>
-            <h2 className={utilStyles.headingLg}>
-              <Link href="/">
-                <a className={utilStyles.colorInherit}>{name}</a>
-              </Link>
-            </h2>
           </>
         )}
       </header>
