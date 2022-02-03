@@ -1,19 +1,19 @@
 import Head from 'next/head'
 import Layout, { siteTitle } from '../components/layout'
 import utilStyles from '../styles/utils.module.css'
-import { getSortedPostsData } from '../lib/posts'
 import Link from 'next/link'
 import Date from '../components/date'
 import React from 'react';
 import ReactDOM from 'react-dom';
 //var listOfImages =[];
-import background from "../public/images/Lightning.jpg";
+//import background from "/images/Lightning.jpg";
 
 export default function Home({ allPostsData }) {
   return (
     //importAll(r) {
     //    return r.keys().map(r);
     //}
+        <RainDrops />
         //<div style={{ backgroundImage: `url(${background})` }}></div>
         <img src="/images/Lightning.jpg" />
     
@@ -34,11 +34,3 @@ export default function Home({ allPostsData }) {
   )
 }
 
-export async function getStaticProps() {
-  const allPostsData = getSortedPostsData()
-  return {
-    props: {
-      allPostsData
-    }
-  }
-}
